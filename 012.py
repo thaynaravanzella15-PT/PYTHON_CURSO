@@ -1,0 +1,6 @@
+print('-'*30)
+valor=float(input('Digite o valor do produto R$'))
+print('-'*30)
+desconto=valor-(valor*5/100)
+print(f'o preço do produto com desconto é de R${desconto:.2f}')
+print('-'*30)

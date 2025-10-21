@@ -1,0 +1,6 @@
+print('-'*30)
+sal=float(input('Digite o salário do funcionário R$'))
+print('-'*30)
+novo=sal+(sal*15/100)
+print(f'Com aumento de 15% o salário do funcionário \nera R${sal:.2f}\ne agora será R${novo:.2f}')
+print('-'*30)
