@@ -1,0 +1,10 @@
+nome = input('Digite seu nome completo: ').strip()
+print('Analisando seu nome...')
+print('nome maiúsculo: ',nome.upper())
+print('nome minúsculo: ',nome.lower())
+splite = nome.split()
+print('-'.join(splite))
+texto = len(nome) - nome.count(' ')
+print(f'seu nome ao todo tem {texto} letras')
+print(f'seu primeiro nome tem {nome.find(' ')} letras')
+#.strip() no nome evita os espaços antes e depois
