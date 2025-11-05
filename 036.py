@@ -7,8 +7,9 @@ sal = float(input('Indique seu salario? R$'))
 tempo = int(input('Em quantos anos pretende pagar?'))
 mes = tempo * 12
 emprestimo = tenda/mes
-nsal= sal*0.30
-if emprestimo >= nsal:
+nsal= sal * 30/100
+if emprestimo <= nsal:
     print(f'{cores['azul']}PARABÉNS!! agora você tem uma tenda e uma divida{cores['limpa']}')
+    print(f'Tenda:{tenda}\nPrestação R${emprestimo}\nDuração:{mes} meses')
 else:
     print(f'\033[31mVixi deu errado, quem sabe em mais prestações?{cores['limpa']}')
